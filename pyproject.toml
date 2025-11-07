@@ -1,9 +1,9 @@
 [build-system]
-requires = ["setuptools >= 70"]
+requires = ["setuptools >= 70", "numpy"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mytoy"
+name = "ligotools"
 authors = [
   { name="Ligo Scientific Collaboration (LSC) and Benjamin Sabu Zacharia", email="bsabuzacharia@berkeley.edu" },
 ]
@@ -12,7 +12,7 @@ readme = "README.md"
 
 requires-python = ">=3.9"
 dependencies = [
-    "numpy>=2.0",
+    "numpy<2.3,>=2.0",
     "scipy>=1.13",
     "h5py>=3.12",
     "matplotlib>=3.9",
@@ -35,7 +35,7 @@ Homepage = "https://github.com/UCB-stat-159-f25/hw3-bzacharia999"
 Issues = "https://github.com/UCB-stat-159-f25/hw3-bzacharia999/issues"
 
 [tool.setuptools]
-packages = ["readligo"]
+packages = ["ligotools"]
 
 [tool.setuptools.dynamic]
-version = {attr = "readligo.__version__"}
+version = {attr = "ligotools.__version__"}
