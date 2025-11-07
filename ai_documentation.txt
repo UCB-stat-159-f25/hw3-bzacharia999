@@ -1,0 +1,13 @@
+These are the questions I asked ChatGPT:
+
+1) im getting this error when i ran 'pip install .' while in the package directory : "× Getting requirements to build wheel did not run successfully. │ exit code: 1 ╰─> [53 lines of output] configuration error: `project.dependencies[0]` must be pep508 DESCRIPTION: Project dependency specification according to PEP 508 GIVEN VALUE: "python=3.9" OFFENDING RULE: 'format'
+
+2) keywords = ["tools", "toys"], dynamic = ["version"]. 
+what is the point of the keywords variable and the dynamic variable?
+
+3)
+getting this error when running make env: Environment does not exist. Creating... CondaValueError: prefix already exists: /home/jovyan/.local/share/envs/ligo. Whats causing this error?
+
+4)
+what does this do: .ONESHELL: SHELL = /bin/bash create_environment : source /srv/conda/etc/profile.d/conda.sh conda env create -f environment.yml conda activate notebook conda install ipykernel python -m ipykernel install --user --name make-env --display-name "IPython - Make"
+
